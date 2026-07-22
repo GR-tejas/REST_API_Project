@@ -2,8 +2,8 @@ const bt_login = $("#login");
 const bt_register = $("#register");
 const inp_username = $("#username");
 const inp_password = $("#password");
-const url_login = "http://localhost:8080/login";
-const url_register = "http://localhost:8080/register";
+const url_login = "/login";
+const url_register = "/register";
 
 function getLoginRequest()
 {

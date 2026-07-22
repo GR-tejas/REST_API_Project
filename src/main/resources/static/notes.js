@@ -19,7 +19,7 @@ function getNoteRequest()
 $("#submit").click(
     function() {
         const noteRequest = getNoteRequest();
-        fetch("http://localhost:8080/notes", {
+        fetch("/notes", {
             method: "POST",
             headers:
             {
@@ -41,7 +41,7 @@ $("#submit").click(
 
 $("#fetch").click(
     function(){
-        fetch("http://localhost:8080/notes/"+username,{
+        fetch("notes/"+username,{
             method: "GET",
             headers: 
             {
