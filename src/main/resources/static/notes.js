@@ -57,9 +57,10 @@ $("#fetch").click(
             $("#noteList").empty();
             for(const note of result)
             {
-                $("#noteList").append("<p>"+ 
+                $("#noteList").append(
+                    "<div id = '"+ note.id +"'><p>"+ 
                     note.text +
-                    "</p>"
+                    "</p><button type = 'button' class = 'text_edit'><button = 'button' class = 'text_delete'></div>"
                 );
             }
         });
