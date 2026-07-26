@@ -60,7 +60,7 @@ $("#fetch").click(
                 $("#noteList").append(
                     "<div id = '"+ note.id +"'><p>"+ 
                     note.text +
-                    "</p><button type = 'button' class = 'text_edit'><button = 'button' class = 'text_delete'></div>"
+                    "</p><button type = 'button' class = 'text_edit'>Edit</button><button = 'button' class = 'text_delete'>Delete</button></div>"
                 );
             }
         });
