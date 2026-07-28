@@ -37,11 +37,19 @@ public class Note {
         return text;
     }
 
+    public User getUser(){
+        return this.user;
+    }
+
     public void setId(int id) {
         this.id = id;
     }
 
     public void setText(String text) {
         this.text = text;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
     }
 }

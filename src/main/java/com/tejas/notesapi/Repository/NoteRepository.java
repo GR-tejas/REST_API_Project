@@ -9,4 +9,5 @@ import com.tejas.notesapi.entity.User;
 
 public interface NoteRepository extends JpaRepository<Note, Integer> {
     List<Note> findByUser(User user);
+    List<Note> findByUserOrderByIdAsc(User user);
 }
